@@ -522,7 +522,6 @@ augroup misc
   autocmd VimEnter *
     \ if !argc() |
     \   Startify |
-    \   NERDTree ~/Projects |
     \   execute "normal! \<C-w>w" |
     \ endif
 augroup END
