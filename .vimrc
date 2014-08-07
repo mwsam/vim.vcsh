@@ -288,14 +288,11 @@ syntax on
 filetype plugin indent on
 
 colorscheme hybrid
-highlight ExtraWhitespace ctermbg=darkred
 highlight IndentGuidesOdd ctermbg=235
 highlight IndentGuidesEven ctermbg=236
 highlight LineNr ctermfg=darkgrey
 highlight OverLength ctermbg=darkred
 
-" Show trailing whitespace and spaces before a tab.
-match ExtraWhitespace /\s\+$\| \+\ze\t/
 " Highlight line over 80 chars.
 match OverLength /\%>80v.\+/
 

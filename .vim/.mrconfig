@@ -71,6 +71,9 @@ checkout = git clone 'https://github.com/Shougo/unite.vim.git' 'unite.vim'
 [bundle/vim-airline]
 checkout = git clone 'https://github.com/bling/vim-airline.git' 'vim-airline'
 
+[bundle/vim-better-whitespace]
+checkout = git clone 'https://github.com/ntpeters/vim-better-whitespace.git' 'vim-better-whitespace'
+
 [bundle/vim-choosewin]
 checkout = git clone 'https://github.com/t9md/vim-choosewin.git' 'vim-choosewin'
 
