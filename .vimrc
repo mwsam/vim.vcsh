@@ -41,7 +41,7 @@ set foldlevel=99
 set foldmethod=indent
 set formatoptions+=ronlj
 
-" Make gvim looks like vim.
+" Make GVim looks like Vim.
 set guioptions=aigt
 
 set history=100
@@ -488,8 +488,10 @@ augroup misc
   autocmd BufWritePost ~/.config/openbox/*.xml
     \ :call system('openbox --reconfigure')
 
-  " Auto open tagbar on supported file types.
-  autocmd FileType * nested :call tagbar#autoopen(0)
+  " Auto open tagbar on supported file types only when not in diff mode.
+  if !&diff
+    autocmd FileType * nested :call tagbar#autoopen(0)
+  endif
 
   " Spell check commit message.
   autocmd Filetype gitcommit setlocal spell textwidth=76
@@ -507,7 +509,7 @@ augroup misc
   " Remember last used tab.
   autocmd TabLeave * let g:lasttab=tabpagenr()
 
-  " Open Startify and NERDTree only if vim is opened with no argument.
+  " Open Startify only if Vim is opened with no arguments.
   autocmd VimEnter *
     \ if !argc() |
     \   Startify |
