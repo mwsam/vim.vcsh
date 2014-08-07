@@ -192,12 +192,6 @@ nnoremap <expr> <C-p> IsBufferExist('location list') ?
   \ ':lprevious<CR>' :
   \ ':cprevious<CR>'
 
-" Better f and t using plugin.
-nmap f <Plug>(glowshi-ft-f)
-nmap F <Plug>(glowshi-ft-F)
-nmap t <Plug>(glowshi-ft-t)
-nmap T <Plug>(glowshi-ft-T)
-
 " Smash escape.
 " NOTE: <Esc> doesn't work properly in command mode, so use go to normal mode.
 noremap! jk <C-\><C-n>
@@ -332,8 +326,6 @@ let g:airline#extensions#tabline#left_sep=' '
 
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
-
-let g:glowshi_ft_no_default_key_mappings=1
 
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1

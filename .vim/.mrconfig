@@ -1,6 +1,9 @@
 [bundle/ag.vim]
 checkout = git clone 'https://github.com/rking/ag.vim.git' 'ag.vim'
 
+[bundle/clever-f.vim]
+checkout = git clone 'https://github.com/rhysd/clever-f.vim.git' 'clever-f.vim'
+
 [bundle/cosco.vim]
 checkout = git clone 'https://github.com/lfilho/cosco.vim.git' 'cosco.vim'
 
@@ -9,9 +12,6 @@ checkout = git clone 'https://github.com/Raimondi/delimitMate.git' 'delimitMate'
 
 [bundle/drupal]
 checkout = git clone 'http://git.drupal.org/project/vimrc.git' 'drupal'
-
-[bundle/glowshi-ft.vim]
-checkout = git clone 'https://github.com/saihoooooooo/glowshi-ft.vim.git' 'glowshi-ft.vim'
 
 [bundle/html5.vim]
 checkout = git clone 'https://github.com/othree/html5.vim.git' 'html5.vim'
