@@ -4,6 +4,9 @@ checkout = git clone 'https://github.com/rking/ag.vim.git' 'ag.vim'
 [bundle/clever-f.vim]
 checkout = git clone 'https://github.com/rhysd/clever-f.vim.git' 'clever-f.vim'
 
+[bundle/committia.vim]
+checkout = git clone 'https://github.com/rhysd/committia.vim.git' 'committia.vim'
+
 [bundle/cosco.vim]
 checkout = git clone 'https://github.com/lfilho/cosco.vim.git' 'cosco.vim'
 
