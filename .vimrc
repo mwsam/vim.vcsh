@@ -453,8 +453,8 @@ augroup END
 
 augroup filetype
   autocmd!
+
   autocmd BufRead,BufNewFile *.as set filetype=actionscript
-  autocmd BufRead,BufNewFile /etc/nginx/** set filetype=nginx
 
   " Set the correct filetypes for Drupal files.
   autocmd BufRead,BufNewFile *.module set filetype=php
