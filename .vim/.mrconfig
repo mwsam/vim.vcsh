@@ -49,6 +49,9 @@ checkout = git clone 'https://github.com/klen/python-mode.git' 'python-mode'
 [bundle/Recover.vim]
 checkout = git clone 'https://github.com/chrisbra/Recover.vim.git' 'Recover.vim'
 
+[bundle/splitjoin.vim]
+checkout = git clone 'https://github.com/AndrewRadev/splitjoin.vim.git' 'splitjoin.vim'
+
 [bundle/syntastic]
 checkout = git clone 'https://github.com/scrooloose/syntastic.git' 'syntastic'
 
