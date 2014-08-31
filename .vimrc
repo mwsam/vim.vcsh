@@ -459,6 +459,8 @@ augroup filetype
   autocmd BufRead,BufNewFile *.haproxy set filetype=haproxy
   autocmd BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 
+  autocmd BufRead,BufNewFile *.upstart set filetype=upstart
+
   " Set the correct filetypes for Drupal files.
   autocmd BufRead,BufNewFile *.module set filetype=php
   autocmd BufRead,BufNewFile *.theme set filetype=php
