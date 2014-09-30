@@ -395,7 +395,7 @@ let g:session_directory=$HOME . '/.vim/session'
 let g:signify_disable_by_default=1
 let g:signify_vcs_list=['git']
 
-let g:startify_session_autoload=1
+let g:startify_enable_special=0
 let g:startify_list_order=[
   \ ['   My sessions:'],
   \ 'sessions',
@@ -406,6 +406,7 @@ let g:startify_list_order=[
   \ ['   My bookmarks:'],
   \ 'bookmarks'
   \ ]
+let g:startify_session_autoload=1
 
 let g:syntastic_aggregate_errors=1
 let g:syntastic_always_populate_loc_list=1
