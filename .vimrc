@@ -419,7 +419,7 @@ let g:syntastic_warning_symbol='⚠'
 "   \ 'active_filetypes': [],
 "   \ 'passive_filetypes': ['html']
 "   \ }
-let g:syntastic_css_csslint_args='--ignore=adjoining-classes,ids'
+let g:syntastic_css_csslint_args='--ignore=adjoining-classes,box-sizing,ids'
 let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_php_checkers=['phpcs']
 let g:syntastic_php_phpcs_args=
