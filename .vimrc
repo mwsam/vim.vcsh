@@ -237,8 +237,6 @@ map <Leader>*
 map <Leader>] :TagbarToggle<CR>
 nmap <Leader>; :call cosco#commaOrSemiColon()<CR>
 imap <Leader>; <C-o>:call cosco#commaOrSemiColon()<CR>
-" map <Leader>. :Unite -start-insert file_rec<CR>
-map <Leader>. :Unite file<CR>
 map <Leader>/ :Ag! ''<Left>
 map <Leader>a <Plug>(EasyAlign)
 map <Leader>b :buffer#<CR>
@@ -259,8 +257,6 @@ map <Leader>jr :TernRename<CR>
 map <Leader>jt :TernType<CR>
 map <Leader>m <Plug>(quickhl-manual-this)
 map <Leader>M <Plug>(quickhl-manual-reset)
-map <Leader>ov :tabedit $MYVIMRC<CR>
-map <Leader>oV :edit $MYVIMRC<CR>
 nmap <Leader>s :%s//
 vmap <Leader>s :s//
 map <Leader>tn :tabnew<CR>
@@ -320,6 +316,12 @@ let g:airline#extensions#tabline#show_tab_type=0
 let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
 let g:airline#extensions#tabline#left_sep=' '
+
+let g:ctrlp_map='<Leader>o'
+let g:ctrlp_clear_cache_on_exit=0
+let g:ctrlp_open_new_file='h'
+let g:ctrlp_open_multiple_files='h'
+let g:ctrlp_lazy_update=1
 
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1

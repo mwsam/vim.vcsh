@@ -10,6 +10,9 @@ checkout = git clone 'https://github.com/rhysd/committia.vim.git' 'committia.vim
 [bundle/cosco.vim]
 checkout = git clone 'https://github.com/lfilho/cosco.vim.git' 'cosco.vim'
 
+[bundle/ctrlp.vim]
+checkout = git clone 'https://github.com/kien/ctrlp.vim.git' 'ctrlp.vim'
+
 [bundle/delimitMate]
 checkout = git clone 'https://github.com/Raimondi/delimitMate.git' 'delimitMate'
 
@@ -73,9 +76,6 @@ fixups = npm update
 
 [bundle/undotree]
 checkout = git clone 'https://github.com/mbbill/undotree.git' 'undotree'
-
-[bundle/unite.vim]
-checkout = git clone 'https://github.com/Shougo/unite.vim.git' 'unite.vim'
 
 [bundle/vim-airline]
 checkout = git clone 'https://github.com/bling/vim-airline.git' 'vim-airline'
