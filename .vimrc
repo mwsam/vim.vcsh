@@ -330,6 +330,9 @@ let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1
 " let g:indent_guides_exclude_filetypes=['help']
 
+let g:multi_cursor_start_key='g<C-p>'
+let g:multi_cursor_start_word_key='g<C-n>'
+
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
 let g:NERDTreeDirArrows=1
@@ -537,6 +540,20 @@ function! IsBufferExist(name)
       return 1
     endif
   endfor
+endfunction
+
+" Disable NeoComplete before starting multiple selection due to conflict.
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock') == 2
+    execute 'NeoCompleteLock'
+  endif
+endfunction
+
+" Re-enable NeoComplete after multiple selection is cancelled.
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock') == 2
+    execute 'NeoCompleteUnlock'
+  endif
 endfunction
 
 " Needed by YankRing if Y is remapped, i.e. to y$.
