@@ -95,6 +95,7 @@ set title
 set undodir=~/.vim/.undo//
 set undofile
 
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/bower_components/*,*/node_modules/*
 set wildmenu
 set wildmode=list:longest,full
 
@@ -232,7 +233,7 @@ map <Leader><CR> :nohlsearch<CR>
 " Show all lines with keyword under cursor and ask which one to jump to.
 map <Leader>*
   \ [I:let nr=input('Which one: ')<Bar>
-  \ exe 'normal ' . nr . "[\t"<CR>
+  \ execute 'normal ' . nr . "[\t"<CR>
 
 map <Leader>] :TagbarToggle<CR>
 nmap <Leader>; :call cosco#commaOrSemiColon()<CR>
