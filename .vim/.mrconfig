@@ -55,6 +55,9 @@ checkout = git clone 'https://github.com/klen/python-mode.git' 'python-mode'
 [bundle/Recover.vim]
 checkout = git clone 'https://github.com/chrisbra/Recover.vim.git' 'Recover.vim'
 
+[bundle/smartpairs.vim]
+checkout = git clone 'https://github.com/gorkunov/smartpairs.vim.git' 'smartpairs.vim'
+
 [bundle/splitjoin.vim]
 checkout = git clone 'https://github.com/AndrewRadev/splitjoin.vim.git' 'splitjoin.vim'
 
