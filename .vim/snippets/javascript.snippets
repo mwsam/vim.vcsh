@@ -1,18 +1,26 @@
+# Variable declaration
+snippet v
+	var ${0:variable_name};
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} = function (${3}) {
 		${0}
 	};
-# Function
-snippet fun
-	function ${1:function_name}(${2}) {
-		${0}
-	}
 # Anonymous Function
 snippet f
 	function (${1}) {
 		${0}
 	}${2}
+# Anonymous function assigned to variable
+snippet vf
+	var ${1:function_name} = function (${2}) {
+		${0}
+	};
+# Function assigned to variable
+snippet vfn
+	var ${1:function_name} = function $1(${2}) {
+		${0}
+	};
 # Immediate function (avoid problem with autoclose)
 snippet (f)
 	(function ${1}(${3}) {
@@ -39,17 +47,17 @@ snippet el
 # tertiary conditional
 snippet ?
 	${1:condition} ? ${2} : ${0}
-# for (...) {...}
+# for loop
 snippet for
 	for (l = ${1:arr}.length, ${2:i} = 0; $2 < l; ++$2) {
 		${3}$1[$2]${0}
 	}
-# for (...) {...} (Improved Native For-Loop)
+# Reversed for loop
 snippet forr
 	for (${2:i} = ${1:arr}.length - 1; $2 >= 0; --$2) {
 		${3}$1[$2]${0}
 	}
-# for (property in object ) { ... }
+# for in loop
 snippet fori
 	for (${2:key} in ${1:obj}) {
 		if ($1.hasOwnProperty($2)) {
@@ -74,9 +82,6 @@ snippet /**
 	/**
 	 * ${0:description}
 	 */
-# @param
-snippet @par
-	@param {${1:type}} ${2:name} ${0:description}
 # @property
 snippet @pro
 	@property {${1:type}} ${2:name} ${0:description}
@@ -91,11 +96,26 @@ snippet def
 
 		${0}
 	});
-# Function expression
-snippet varf
-	var ${1:function_name} = function (${2}) {
+# RequireJS define with dependencies
+snippet defd
+	define([
+		'${1:#dependencies1}'
+	], function (
+		${2:#dependencies2}
+	) {
+		'use strict';
+
 		${0}
-	};
+	});
+# RequireJS require
+snippet reqjs
+	require([
+		'${1:#dependencies1}'
+	], function (
+		${2:#dependencies2}
+	) {
+		${0}
+	});
 # console.error
 snippet ce
 	console.error(${0});
