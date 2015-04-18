@@ -95,7 +95,15 @@ set title
 set undodir=~/.vim/.undo//
 set undofile
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/bower_components/*,*/node_modules/*
+set wildignore+=*.o
+set wildignore+=*.obj
+set wildignore+=*.pyc
+set wildignore+=*/.git/*
+set wildignore+=*/.hg/*
+set wildignore+=*/.svn/*
+set wildignore+=*/bower_components/*
+set wildignore+=*/node_modules/*
+
 set wildmenu
 set wildmode=list:longest,full
 
