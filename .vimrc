@@ -305,8 +305,9 @@ match OverLength /\%>80v.\+/
 " Custom variable: Last used tab.
 let g:lasttab=1
 
-let g:agprg='ag --smart-case --vimgrep'
 let g:ag_apply_qmappings=0
+let g:ag_highlight=1
+let g:ag_prg='ag --smart-case --vimgrep'
 
 let g:airline_left_sep='▶'
 let g:airline_right_sep='◀'
