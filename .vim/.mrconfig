@@ -116,6 +116,9 @@ checkout = git clone 'https://github.com/pangloss/vim-javascript.git' 'vim-javas
 [bundle/vim-json]
 checkout = git clone 'https://github.com/elzr/vim-json.git' 'vim-json'
 
+[bundle/vim-localvimrc]
+checkout = git clone 'https://github.com/embear/vim-localvimrc.git' 'vim-localvimrc'
+
 [bundle/vim-markdown]
 checkout = git clone 'https://github.com/plasticboy/vim-markdown.git' 'vim-markdown'
 

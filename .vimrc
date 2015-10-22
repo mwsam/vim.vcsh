@@ -30,8 +30,8 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-" Enable reading .vimrc/.exrc/.gvimrc in the current directory, securely.
-set exrc
+" Disable loading of local .vimrc for security.
+set noexrc
 set secure
 
 " Solid line for window borders.
@@ -339,6 +339,10 @@ let g:delimitMate_expand_space=1
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1
 " let g:indent_guides_exclude_filetypes=['help']
+
+" Remember local vimrc loading decisions, but will still ask again if file
+" content has been changed since the last time decision was made.
+let g:localvimrc_persistent=1
 
 let g:multi_cursor_start_key='g<C-p>'
 let g:multi_cursor_start_word_key='g<C-n>'
