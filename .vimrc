@@ -327,11 +327,12 @@ let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
 let g:airline#extensions#tabline#left_sep=' '
 
-let g:ctrlp_map='<Leader>o'
 let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_open_new_file='h'
-let g:ctrlp_open_multiple_files='h'
 let g:ctrlp_lazy_update=1
+let g:ctrlp_map='<Leader>o'
+let g:ctrlp_open_multiple_files='h'
+let g:ctrlp_open_new_file='h'
+let g:ctrlp_user_command='ag --nocolor -lg "" %s'
 
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
@@ -438,7 +439,11 @@ let g:syntastic_warning_symbol='⚠'
 "   \ 'active_filetypes': [],
 "   \ 'passive_filetypes': ['html']
 "   \ }
-let g:syntastic_css_csslint_args='--ignore=adjoining-classes,box-sizing,ids'
+let g:syntastic_css_csslint_args=
+  \ '--ignore=' .
+  \   'adjoining-classes,' .
+  \   'box-sizing,' .
+  \   'ids'
 let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_php_checkers=['phpcs']
 let g:syntastic_php_phpcs_args=
