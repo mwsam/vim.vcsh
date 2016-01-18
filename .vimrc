@@ -252,6 +252,7 @@ map <Leader>/ :Ag! ''<Left>
 map <Leader>a <Plug>(EasyAlign)
 map <Leader>b :buffer#<CR>
 map <Leader>c :TComment<CR>
+map <Leader>C :TCommentBlock<CR>
 map <Leader>e :NERDTreeToggle .<CR>
 map <Leader>E :NERDTreeFind<CR>
 map <Leader>f :ChooseWin<CR>
