@@ -279,6 +279,11 @@ map <Leader>to <C-w>T
 map <Leader>tq :tabclose<CR>
 map <Leader>ts :tab split<CR>
 map <Leader>tt :tabnext<C-r>=g:lasttab<CR><CR>
+map <Leader>Tf :TestFile<CR>
+map <Leader>Tn :TestNearest<CR>
+map <Leader>Ts :TestSuite<CR>
+map <Leader>Tv :TestVisit<CR>
+map <Leader>TT :TestLast<CR>
 map <Leader>u :UndotreeToggle<CR>
 
 " Echo syntax highlighting group for the keyword under cursor.
