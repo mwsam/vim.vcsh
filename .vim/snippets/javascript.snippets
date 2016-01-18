@@ -136,3 +136,15 @@ snippet deb
 # Inline debug statement
 snippet debi
 	/*DEBUG*/${0}/*END_DEBUG*/
+# Copy arguments to existing array
+snippet cargs
+	var _i = 0, _l = arguments.length; ${1:args}.length = _l; for (; _i < _l; ++_i) { $1[_i] = arguments[_i]; } // jshint ignore:line${0}
+# Slice arguments object into new array
+snippet sargs
+	var _i = ${2:1}, _end = ${3:arguments.length}, ${1:args} = new Array(Math.max(0, _end - _i)); for (; _i < _end; ++_i) { $1[_i - $2] = arguments[_i]; } // jshint ignore:line${0}
+# Slice and copy arguments to existing array
+snippet scargs
+	var _i = ${2:1}, _end = ${3:arguments.length}; ${1:args}.length = Math.max(0, _end - _i); for (; _i < _end; ++_i) { $1[_i - $2] = arguments[_i]; } // jshint ignore:line${0}
+# Copy arguments to new array
+snippet vargs
+	var _i = 0, _l = arguments.length, ${1:args} = new Array(_l); for (; _i < _l; ++_i) { $1[_i] = arguments[_i]; } // jshint ignore:line${0}
