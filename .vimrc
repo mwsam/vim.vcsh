@@ -246,6 +246,8 @@ map <Leader>*
 map <Leader>] :TagbarToggle<CR>
 nmap <Leader>; :call cosco#commaOrSemiColon()<CR>
 imap <Leader>; <C-o>:call cosco#commaOrSemiColon()<CR>
+nmap <Leader>. :w<CR>
+imap <Leader>. <Esc>:w<CR>
 map <Leader>/ :Ag! ''<Left>
 map <Leader>a <Plug>(EasyAlign)
 map <Leader>b :buffer#<CR>
