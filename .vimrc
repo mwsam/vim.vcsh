@@ -344,6 +344,7 @@ let g:ctrlp_user_command='ag --nocolor -lg "" %s'
 
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
+let g:delimitMate_nesting_quotes=['"']
 
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1
