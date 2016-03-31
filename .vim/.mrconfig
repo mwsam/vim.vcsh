@@ -195,5 +195,8 @@ checkout = git clone 'https://github.com/tpope/vim-unimpaired.git' 'vim-unimpair
 [bundle/vimwiki]
 checkout = git clone 'https://github.com/vimwiki/vimwiki.git' 'vimwiki'
 
+[bundle/visual-split.vim]
+checkout = git clone 'https://github.com/wellle/visual-split.vim.git' 'visual-split.vim'
+
 [bundle/YankRing.vim]
 checkout = git clone 'https://github.com/vim-scripts/YankRing.vim.git' 'YankRing.vim'
