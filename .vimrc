@@ -372,8 +372,8 @@ let g:neocomplete#max_list=10
 
 " Snippets directory ordered in decreasing priority.
 let g:neosnippet#snippets_directory=[
-  \ $HOME . '/.vim/snippets',
-  \ $HOME . '/.vim/bundle/vim-snippets/snippets'
+  \   $HOME . '/.vim/snippets',
+  \   $HOME . '/.vim/bundle/vim-snippets/snippets'
   \ ]
 let g:neosnippet#disable_runtime_snippets={'_': 1}
 
@@ -382,15 +382,15 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 let g:nerdtree_tabs_synchronize_view=0
 
 let g:numbers_exclude=[
-  \ 'gundo',
-  \ 'nerdtree',
-  \ 'qf',
-  \ 'startify',
-  \ 'tagbar',
-  \ 'undotree',
-  \ 'unite',
-  \ 'vimshell',
-  \ 'w3m'
+  \   'gundo',
+  \   'nerdtree',
+  \   'qf',
+  \   'startify',
+  \   'tagbar',
+  \   'undotree',
+  \   'unite',
+  \   'vimshell',
+  \   'w3m'
   \ ]
 
 let g:pymode_options=0
@@ -399,19 +399,19 @@ let g:pymode_lint=1
 let g:pymode_lint_checkers=['mccabe']
 let g:pymode_lint_cwindow=0
 let g:pymode_breakpoint_bind='<Leader>pb'
-let g:pymode_run_bind='<Leader>pE'
-let g:pymode_rope_show_doc_bind='<Leader>pd'
-let g:pymode_rope_goto_definition_bind='<Leader>pg'
 let g:pymode_rope_autoimport_bind='<Leader>pi'
-let g:pymode_rope_organize_imports_bind='<Leader>po'
+let g:pymode_rope_change_signature_bind='<Leader>ps'
 let g:pymode_rope_extract_method_bind='<Leader>pem'
 let g:pymode_rope_extract_variable_bind='<Leader>pev'
+let g:pymode_rope_goto_definition_bind='<Leader>pg'
+let g:pymode_rope_module_to_package_bind='<Leader>pRp'
 let g:pymode_rope_move_bind='<Leader>pm'
+let g:pymode_rope_organize_imports_bind='<Leader>po'
 let g:pymode_rope_rename_bind='<Leader>pr'
 let g:pymode_rope_rename_module_bind='<Leader>pRm'
-let g:pymode_rope_module_to_package_bind='<Leader>pRp'
-let g:pymode_rope_change_signature_bind='<Leader>ps'
+let g:pymode_rope_show_doc_bind='<Leader>pd'
 let g:pymode_rope_use_function_bind='<Leader>pu'
+let g:pymode_run_bind='<Leader>pE'
 let g:pymode_syntax_print_as_function=1
 
 let g:session_autoload='no'
@@ -426,14 +426,14 @@ let g:signify_vcs_list=['git']
 
 let g:startify_enable_special=0
 let g:startify_list_order=[
-  \ ['   My sessions:'],
-  \ 'sessions',
-  \ ['   Last recently opened files:'],
-  \ 'files',
-  \ ['   Last recently modified files in the current directory:'],
-  \ 'dir',
-  \ ['   My bookmarks:'],
-  \ 'bookmarks'
+  \   ['   My sessions:'],
+  \   'sessions',
+  \   ['   Last recently opened files:'],
+  \   'files',
+  \   ['   Last recently modified files in the current directory:'],
+  \   'dir',
+  \   ['   My bookmarks:'],
+  \   'bookmarks'
   \ ]
 let g:startify_session_autoload=1
 
