@@ -19,9 +19,6 @@ checkout = git clone 'https://github.com/Raimondi/delimitMate.git' 'delimitMate'
 [bundle/haproxy]
 checkout = git clone 'https://github.com/vim-scripts/haproxy.git' 'haproxy'
 
-[bundle/html5.vim]
-checkout = git clone 'https://github.com/othree/html5.vim.git' 'html5.vim'
-
 [bundle/jellybeans.vim]
 checkout = git clone 'https://github.com/nanotech/jellybeans.vim.git' 'jellybeans.vim'
 
@@ -36,9 +33,6 @@ checkout = git clone 'https://github.com/Shougo/neosnippet.vim.git' 'neosnippet.
 
 [bundle/nerdtree]
 checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
-
-[bundle/nginx-vim-syntax]
-checkout = git clone 'https://github.com/evanmiller/nginx-vim-syntax.git' 'nginx-vim-syntax'
 
 [bundle/numbers.vim]
 checkout = git clone 'https://github.com/myusuf3/numbers.vim.git' 'numbers.vim'
@@ -86,9 +80,6 @@ checkout = git clone 'https://github.com/ntpeters/vim-better-whitespace.git' 'vi
 [bundle/vim-choosewin]
 checkout = git clone 'https://github.com/t9md/vim-choosewin.git' 'vim-choosewin'
 
-[bundle/vim-css3-syntax]
-checkout = git clone 'https://github.com/hail2u/vim-css3-syntax.git' 'vim-css3-syntax'
-
 [bundle/vim-css-color]
 checkout = git clone 'https://github.com/ap/vim-css-color.git' 'vim-css-color'
 
@@ -104,26 +95,14 @@ checkout = git clone 'https://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
 [bundle/vim-gitgutter]
 checkout = git clone 'https://github.com/airblade/vim-gitgutter.git' 'vim-gitgutter'
 
-[bundle/vim-go]
-checkout = git clone 'https://github.com/fatih/vim-go.git' 'vim-go'
-
 [bundle/vim-hybrid]
 checkout = git clone 'https://github.com/w0ng/vim-hybrid.git' 'vim-hybrid'
 
 [bundle/vim-indent-guides]
 checkout = git clone 'https://github.com/nathanaelkane/vim-indent-guides.git' 'vim-indent-guides'
 
-[bundle/vim-javascript]
-checkout = git clone 'https://github.com/pangloss/vim-javascript.git' 'vim-javascript'
-
-[bundle/vim-json]
-checkout = git clone 'https://github.com/elzr/vim-json.git' 'vim-json'
-
 [bundle/vim-localvimrc]
 checkout = git clone 'https://github.com/embear/vim-localvimrc.git' 'vim-localvimrc'
-
-[bundle/vim-markdown]
-checkout = git clone 'https://github.com/plasticboy/vim-markdown.git' 'vim-markdown'
 
 [bundle/vim-matchit]
 checkout = git clone 'https://github.com/edsono/vim-matchit.git' 'vim-matchit'
@@ -142,6 +121,9 @@ checkout = git clone 'https://github.com/sickill/vim-pasta.git' 'vim-pasta'
 
 [bundle/vim-pathogen]
 checkout = git clone 'https://github.com/tpope/vim-pathogen.git' 'vim-pathogen'
+
+[bundle/vim-polyglot]
+checkout = git clone 'https://github.com/sheerun/vim-polyglot.git' 'vim-polyglot'
 
 [bundle/vimproc.vim]
 checkout = git clone 'https://github.com/Shougo/vimproc.vim.git' 'vimproc.vim'
