@@ -83,6 +83,9 @@ checkout = git clone 'https://github.com/t9md/vim-choosewin.git' 'vim-choosewin'
 [bundle/vim-css-color]
 checkout = git clone 'https://github.com/ap/vim-css-color.git' 'vim-css-color'
 
+[bundle/vim-cursorword]
+checkout = git clone 'https://github.com/itchyny/vim-cursorword.git' 'vim-cursorword'
+
 [bundle/vim-easy-align]
 checkout = git clone 'https://github.com/junegunn/vim-easy-align.git' 'vim-easy-align'
 
