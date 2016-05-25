@@ -104,6 +104,9 @@ checkout = git clone 'https://github.com/w0ng/vim-hybrid.git' 'vim-hybrid'
 [bundle/vim-indent-guides]
 checkout = git clone 'https://github.com/nathanaelkane/vim-indent-guides.git' 'vim-indent-guides'
 
+[bundle/vim-jsdoc]
+checkout = git clone 'https://github.com/heavenshell/vim-jsdoc.git' 'vim-jsdoc'
+
 [bundle/vim-localvimrc]
 checkout = git clone 'https://github.com/embear/vim-localvimrc.git' 'vim-localvimrc'
 

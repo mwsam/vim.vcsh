@@ -262,7 +262,8 @@ map <Leader>gd :Gsdiff<CR>
 map <Leader>gl :Glog<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gw :Gwrite<CR>
-map <Leader>jd :TernDoc<CR>
+map <Leader>jd <Plug>(jsdoc)
+map <Leader>jD :TernDoc<CR>
 map <Leader>jf :TernRefs<CR>
 map <Leader>jg :TernDef<CR>
 map <Leader>jr :TernRename<CR>
@@ -349,6 +350,70 @@ let g:delimitMate_nesting_quotes=['"']
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1
 " let g:indent_guides_exclude_filetypes=['help']
+
+let g:jsdoc_allow_input_prompt=1
+let g:jsdoc_custom_args_hook={
+  \   '\(arr\|array\)[0-9]\?$': {
+  \     'type': '{array}'
+  \   },
+  \   '\(cb\|callback\)$': {
+  \     'type': '{function}',
+  \     'description': 'Function to call once operation is done.'
+  \   },
+  \   '^e$\|event$': {
+  \     'type': '{Event}'
+  \   },
+  \   '\(el\|element\)$': {
+  \     'type': '{Element}'
+  \   },
+  \   '\(err\|error\)$': {
+  \     'type': '{*}',
+  \     'description': 'Error if any, null otherwise.'
+  \   },
+  \   '\(fn\|func\|handler\)$': {
+  \     'type': '{function}'
+  \   },
+  \   '^i$\|\(idx\|index\)[0-9]\?$': {
+  \     'type': '{number}'
+  \   },
+  \   '^_\?\(is\|has\|should\)': {
+  \     'type': '{boolean}',
+  \   },
+  \   '\(key\|name\)[0-9]\?$': {
+  \     'type': '{string}'
+  \   },
+  \   '^l$\|\(len\|length\)$': {
+  \     'type': '{number}'
+  \   },
+  \   '^_\?\(min\|max\)': {
+  \     'type': '{number}'
+  \   },
+  \   '^n$\|^_\?num': {
+  \     'type': '{number}'
+  \   },
+  \   '\(obj\|object\)[0-9]\?$': {
+  \     'type': '{object}'
+  \   },
+  \   '\(opts\|options\)$': {
+  \     'type': '{object}',
+  \     'description': 'Configuration options.'
+  \   },
+  \   '\(res\|result\)$': {
+  \     'type': '{object}',
+  \     'description': 'If specified, will hold the returned result.'
+  \   },
+  \   '\(str\|string\|text\)[0-9]\?$': {
+  \     'type': '{string}'
+  \   },
+  \   '^_\?d\?\(x\|y\|z\)[0-9]\?$': {
+  \     'type': '{number}'
+  \   },
+  \   '^w$\|^h$\|\(width\|height\)$': {
+  \     'type': '{number}'
+  \   }
+  \ }
+let g:jsdoc_custom_args_regex_only=1
+let g:jsdoc_input_description=1
 
 " Remember local vimrc loading decisions, but will still ask again if file
 " content has been changed since the last time decision was made.
