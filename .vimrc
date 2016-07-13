@@ -600,6 +600,9 @@ augroup misc
   " Spell check commit message.
   autocmd Filetype gitcommit setlocal spell textwidth=76
 
+  " Do not break long line of markdown file during insertion.
+  autocmd Filetype markdown setlocal textwidth=0
+
   " Allow hard tab in snippet files so they use shiftwidth when expanded.
   autocmd Filetype neosnippet setlocal noexpandtab
 
