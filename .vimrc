@@ -351,6 +351,8 @@ let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1
 " let g:indent_guides_exclude_filetypes=['help']
 
+let g:javascript_plugin_jsdoc=1
+
 let g:jsdoc_allow_input_prompt=1
 let g:jsdoc_custom_args_hook={
   \   '\(arr\|array\)[0-9]\?$': {
