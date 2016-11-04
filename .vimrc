@@ -243,6 +243,23 @@ map <Leader>*
   \ [I:let nr=input('Which one: ')<Bar>
   \ execute 'normal ' . nr . "[\t"<CR>
 
+map <Leader>1 1gt
+map <Leader>2 2gt
+map <Leader>3 3gt
+map <Leader>4 4gt
+map <Leader>5 5gt
+map <Leader>6 6gt
+map <Leader>7 7gt
+map <Leader>8 8gt
+map <Leader>9 9gt
+map <Leader>0 10gt
+map <Leader><Tab><Tab> :tabnew<CR>
+
+" Put a window onto its own tab.
+map <Leader><Tab>o <C-w>T
+
+map <Leader><Tab>q :tabclose<CR>
+map <Leader><Tab>s :tab split<CR>
 map <Leader>] :TagbarToggle<CR>
 nmap <Leader>; :call cosco#commaOrSemiColon()<CR>
 imap <Leader>; <C-o>:call cosco#commaOrSemiColon()<CR>
@@ -272,14 +289,7 @@ map <Leader>m <Plug>(quickhl-manual-this)
 map <Leader>M <Plug>(quickhl-manual-reset)
 nmap <Leader>s :%s//
 vmap <Leader>s :s//
-map <Leader>tn :tabnew<CR>
-
-" Put a window onto its own tab.
-map <Leader>to <C-w>T
-
-map <Leader>tq :tabclose<CR>
-map <Leader>ts :tab split<CR>
-map <Leader>tt :tabnext<C-r>=g:lasttab<CR><CR>
+map <Leader>t :tabnext<C-r>=g:lasttab<CR><CR>
 map <Leader>Tf :TestFile<CR>
 map <Leader>Tn :TestNearest<CR>
 map <Leader>Ts :TestSuite<CR>
