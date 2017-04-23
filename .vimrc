@@ -311,7 +311,8 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-colorscheme jellybeans
+colorscheme onedark
+highlight ColorColumn ctermbg=234
 highlight IndentGuidesOdd ctermbg=235
 highlight IndentGuidesEven ctermbg=236
 highlight LineNr ctermfg=darkgrey

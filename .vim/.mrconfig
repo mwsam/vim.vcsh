@@ -40,6 +40,9 @@ checkout = git clone 'https://github.com/scrooloose/nerdtree.git' 'nerdtree'
 [bundle/numbers.vim]
 checkout = git clone 'https://github.com/myusuf3/numbers.vim.git' 'numbers.vim'
 
+[bundle/onedark.vim]
+checkout = git clone 'https://github.com/joshdick/onedark.vim.git' 'onedark.vim'
+
 [bundle/python-mode]
 checkout = git clone 'https://github.com/klen/python-mode.git' 'python-mode'
 
