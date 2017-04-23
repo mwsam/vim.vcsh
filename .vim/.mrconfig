@@ -22,6 +22,9 @@ checkout = git clone 'https://github.com/vim-scripts/haproxy.git' 'haproxy'
 [bundle/jellybeans.vim]
 checkout = git clone 'https://github.com/nanotech/jellybeans.vim.git' 'jellybeans.vim'
 
+[bundle/matchit.zip]
+checkout = git clone 'https://github.com/vim-scripts/matchit.zip.git' 'matchit.zip'
+
 [bundle/MatchTag]
 checkout = git clone 'https://github.com/gregsexton/MatchTag.git' 'MatchTag'
 
@@ -109,9 +112,6 @@ checkout = git clone 'https://github.com/heavenshell/vim-jsdoc.git' 'vim-jsdoc'
 
 [bundle/vim-localvimrc]
 checkout = git clone 'https://github.com/embear/vim-localvimrc.git' 'vim-localvimrc'
-
-[bundle/vim-matchit]
-checkout = git clone 'https://github.com/edsono/vim-matchit.git' 'vim-matchit'
 
 [bundle/vim-misc]
 checkout = git clone 'https://github.com/xolox/vim-misc.git' 'vim-misc'
