@@ -502,6 +502,8 @@ let g:session_directory=$HOME . '/.vim/session'
 let g:signify_disable_by_default=1
 let g:signify_vcs_list=['git']
 
+let g:splitjoin_curly_brace_padding=0
+
 let g:startify_enable_special=0
 let g:startify_list_order=[
   \   ['   My sessions:'],
