@@ -194,12 +194,12 @@ nnoremap <S-Left> :execute 'tabmove' tabpagenr() - 2<CR>
 nnoremap <S-Right> :execute 'tabmove' tabpagenr()<CR>
 
 " Browse location or quickfix list depending on which window is visible.
-nnoremap <expr> <C-n> IsBufferExist('location list') ?
-  \ ':lnext<CR>' :
-  \ ':cnext<CR>'
-nnoremap <expr> <C-p> IsBufferExist('location list') ?
-  \ ':lprevious<CR>' :
-  \ ':cprevious<CR>'
+nnoremap <expr> <C-n> IsBufferExist('quickfix list') ?
+  \ ':cnext<CR>' :
+  \ ':lnext<CR>'
+nnoremap <expr> <C-p> IsBufferExist('quickfix list') ?
+  \ ':cprevious<CR>' :
+  \ ':lprevious<CR>'
 
 " Smash escape.
 " NOTE: <Esc> doesn't work properly in command mode, so use go to normal mode.
