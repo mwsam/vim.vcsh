@@ -535,7 +535,7 @@ let g:syntastic_css_csslint_args=
   \   'adjoining-classes,' .
   \   'box-sizing,' .
   \   'ids'
-let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_php_checkers=['phpcs']
 let g:syntastic_php_phpcs_args=
   \ '--standard=Drupal ' .
