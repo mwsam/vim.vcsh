@@ -477,10 +477,15 @@ let g:numbers_exclude=[
   \ ]
 
 let g:pymode_options=0
-let g:pymode_lint=1
+" Disabled due to performance issue.
+" See https://github.com/python-mode/python-mode/issues/523
+let g:pymode_folding=0
 " Only turn on checkers not supported by Syntastic.
 let g:pymode_lint_checkers=['mccabe']
 let g:pymode_lint_cwindow=0
+let g:pymode_rope_lookup_project=0
+let g:pymode_rope_regenerate_on_write=0
+let g:pymode_rope_complete_on_dot=0
 let g:pymode_breakpoint_bind='<Leader>pb'
 let g:pymode_rope_autoimport_bind='<Leader>pi'
 let g:pymode_rope_change_signature_bind='<Leader>ps'
@@ -496,6 +501,7 @@ let g:pymode_rope_show_doc_bind='<Leader>pd'
 let g:pymode_rope_use_function_bind='<Leader>pu'
 let g:pymode_run_bind='<Leader>pE'
 let g:pymode_syntax_print_as_function=1
+let g:pymode_syntax_slow_sync=0
 
 let g:session_autoload='no'
 let g:session_autosave='no'
