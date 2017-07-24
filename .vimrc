@@ -332,7 +332,7 @@ let g:lasttab=1
 
 let g:ag_apply_qmappings=0
 let g:ag_highlight=1
-let g:ag_prg='ag --skip-vcs-ignores --smart-case --vimgrep'
+let g:ag_prg='ag --hidden --skip-vcs-ignores --smart-case --vimgrep'
 
 let g:airline_left_sep='▶'
 let g:airline_right_sep='◀'
@@ -357,7 +357,7 @@ let g:ctrlp_lazy_update=1
 let g:ctrlp_map='<Leader>o'
 let g:ctrlp_open_multiple_files='h'
 let g:ctrlp_open_new_file='h'
-let g:ctrlp_user_command='ag --skip-vcs-ignores --nocolor -lg "" %s'
+let g:ctrlp_user_command='ag --files-with-matches --hidden --nocolor --skip-vcs-ignores -g "" %s'
 
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
