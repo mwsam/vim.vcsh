@@ -621,6 +621,12 @@ augroup misc
   autocmd BufWritePost ~/.config/openbox/*.xml
     \ :call system('openbox --reconfigure')
 
+  " Merge X resources configurations after write.
+  autocmd BufWritePost ~/.Xresources
+    \ :call system('xrdb ~/.Xresources')
+  autocmd BufWritePost ~/.Xresources.d/*.Xresources
+    \ :call system('xrdb ~/.Xresources')
+
   " Auto open tagbar on supported file types only when not in diff mode.
   if !&diff
     autocmd FileType * nested :call tagbar#autoopen(0)
