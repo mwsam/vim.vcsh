@@ -146,7 +146,9 @@ nnoremap Y y$
 nnoremap ' `
 nnoremap ` '
 nnoremap 0 ^
+vnoremap 0 ^
 nnoremap ^ 0
+vnoremap ^ 0
 
 " Increment or decrement number.
 nnoremap + <C-a>
