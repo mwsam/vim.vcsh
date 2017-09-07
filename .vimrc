@@ -227,6 +227,9 @@ smap <expr> <Tab> neosnippet#expandable_or_jumpable() ?
   \ '<Tab>'
 inoremap <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'
 
+" Do not reset indent to 1st column when '#' is typed.
+inoremap # X#
+
 " Prevent accidental undo while typing, recover by <Esc>u.
 inoremap <C-u> <C-g>u<C-u>
 inoremap <C-w> <C-g>u<C-w>
