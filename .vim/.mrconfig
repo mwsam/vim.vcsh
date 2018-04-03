@@ -45,6 +45,7 @@ checkout = git clone 'https://github.com/joshdick/onedark.vim.git' 'onedark.vim'
 
 [bundle/python-mode]
 checkout = git clone 'https://github.com/klen/python-mode.git' 'python-mode'
+fixups = git submodule update --init --recursive
 
 [bundle/Recover.vim]
 checkout = git clone 'https://github.com/chrisbra/Recover.vim.git' 'Recover.vim'
@@ -69,7 +70,7 @@ checkout = git clone 'https://github.com/tomtom/tcomment_vim.git' 'tcomment_vim'
 
 [bundle/tern_for_vim]
 checkout = git clone 'https://github.com/marijnh/tern_for_vim.git' 'tern_for_vim'
-fixups = npm update
+fixups = npm --depth=9999 update
 
 [bundle/undotree]
 checkout = git clone 'https://github.com/mbbill/undotree.git' 'undotree'
