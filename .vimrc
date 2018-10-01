@@ -481,6 +481,15 @@ let g:numbers_exclude=[
   \   'w3m'
   \ ]
 
+let g:pasta_disabled_filetypes=[
+  \   'coffee',
+  \   'ctrlp',
+  \   'nerdtree',
+  \   'python',
+  \   'tagbar',
+  \   'yaml'
+  \ ]
+
 let g:pymode_options=0
 " Disabled due to performance issue.
 " See https://github.com/python-mode/python-mode/issues/523
