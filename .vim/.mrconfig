@@ -114,6 +114,9 @@ checkout = git clone 'https://github.com/nathanaelkane/vim-indent-guides.git' 'v
 [bundle/vim-jsdoc]
 checkout = git clone 'https://github.com/heavenshell/vim-jsdoc.git' 'vim-jsdoc'
 
+[bundle/vim-lastplace]
+checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-lastplace'
+
 [bundle/vim-localvimrc]
 checkout = git clone 'https://github.com/embear/vim-localvimrc.git' 'vim-localvimrc'
 

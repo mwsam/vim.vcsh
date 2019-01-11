@@ -616,12 +616,6 @@ augroup END
 augroup misc
   autocmd!
 
-  " Restore cursor position from previous edit session, need .viminfo.
-  autocmd BufReadPost *
-    \ if line("'\"") <= line('$') |
-    \   execute 'normal! g`"zz' |
-    \ endif
-
   " Enhance security when working with encrypted file.
   autocmd BufReadPost *
     \ if &key != '' |
