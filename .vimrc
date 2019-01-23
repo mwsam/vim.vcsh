@@ -573,6 +573,33 @@ let g:syntastic_python_checkers=['pylint', 'py3kwarn']
 let g:tagbar_autoshowtag=1
 let g:tagbar_compact=1
 let g:tagbar_sort=0
+let g:tagbar_type_markdown = {
+  \   'ctagstype': 'markdown',
+  \   'ctagsbin': '~/.vim/bundle/markdown2ctags/markdown2ctags.py',
+  \   'ctagsargs': '-f - --sort=yes --sro=»',
+  \   'kinds': [
+  \     's:sections',
+  \     'i:images'
+  \   ],
+  \   'kind2scope': {
+  \     's': 'section'
+  \   },
+  \   'sort': 0,
+  \   'sro': '»'
+  \ }
+let g:tagbar_type_vimwiki = {
+  \   'ctagstype': 'vimwiki',
+  \   'ctagsbin': '~/.vim/bundle/vimwiki-utils/vwtags.py',
+  \   'ctagsargs': 'default',
+  \   'kinds': [
+  \     'h:header'
+  \   ],
+  \   'kind2scope': {
+  \     'h': 'header'
+  \   },
+  \   'sort': 0,
+  \   'sro': '&&&'
+  \ }
 
 let g:toggle_list_copen_command='botright copen'
 
