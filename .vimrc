@@ -460,8 +460,8 @@ let g:neocomplete#max_list=10
 
 " Snippets directory ordered in decreasing priority.
 let g:neosnippet#snippets_directory=[
-  \   $HOME . '/.vim/snippets',
-  \   $HOME . '/.vim/bundle/vim-snippets/snippets'
+  \   $HOME . '/.vim/bundle/vim-snippets/snippets',
+  \   $HOME . '/.vim/snippets'
   \ ]
 let g:neosnippet#disable_runtime_snippets={'_': 1}
 
