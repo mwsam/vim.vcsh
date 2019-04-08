@@ -47,7 +47,7 @@ checkout = git clone 'https://github.com/myusuf3/numbers.vim.git' 'numbers.vim'
 checkout = git clone 'https://github.com/joshdick/onedark.vim.git' 'onedark.vim'
 
 [bundle/python-mode]
-checkout = git clone 'https://github.com/klen/python-mode.git' 'python-mode'
+checkout = git clone 'https://github.com/python-mode/python-mode.git' 'python-mode'
 fixups = git submodule update --init --recursive
 
 [bundle/Recover.vim]
