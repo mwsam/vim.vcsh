@@ -6,6 +6,32 @@ snippet proto
 	${1:class_name}.prototype.${2:method_name} = function (${3}) {
 		${0}
 	};
+# Implement abstract method from base class
+snippet protoi
+	/**
+	 * Implement base method.
+	 */
+	${1:class_name}.prototype.${2:method_name} = function (${3}) {
+		${0}
+	};
+# Override method from base class
+snippet protoo
+	/**
+	 * Override base method.
+	 */
+	${1:class_name}.prototype.${2:method_name} = function (${3}) {
+		${0}
+	};
+# Extend method from base class
+snippet protox
+	/**
+	 * Extend base method.
+	 */
+	${1:class_name}.prototype.${2:method_name} = function (${3}) {
+		$1.base.$2.call(this${4:, $3});
+
+		${0}
+	};
 # Anonymous Function
 snippet f
 	function (${1}) {
@@ -49,8 +75,8 @@ snippet ?
 	${1:condition} ? ${2} : ${0}
 # for loop
 snippet for
-	for (l = ${1:arr}.length, ${2:i} = 0; $2 < l; ++$2) {
-		${3}$1[$2]${0}
+	for (${3:l} = ${1:arr}.length, ${2:i} = 0; $2 < $3; ++$2) {
+		${4}$1[$2]${0}
 	}
 # Reversed for loop
 snippet forr
@@ -120,6 +146,9 @@ snippet ca
 # console.error
 snippet ce
 	console.error(${0});
+# console.log
+snippet cl
+	console.log(${0});
 # console.trace
 snippet ct
 	console.trace(${0});
