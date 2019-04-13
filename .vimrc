@@ -357,13 +357,6 @@ let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
 let g:airline#extensions#tabline#left_sep=' '
 
-let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_lazy_update=1
-let g:ctrlp_map='<Leader>o'
-let g:ctrlp_open_multiple_files='h'
-let g:ctrlp_open_new_file='h'
-let g:ctrlp_user_command='ag --files-with-matches --hidden --nocolor --skip-vcs-ignores -g "" %s'
-
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
 let g:delimitMate_nesting_quotes=['"']
@@ -442,6 +435,16 @@ let g:jsdoc_input_description=1
 " content has been changed since the last time decision was made.
 let g:localvimrc_persistent=1
 
+let g:Lf_CacheDirectory=$HOME . '/.vim'
+let g:Lf_CommandMap={
+  \   '<Up>': ['<Up>', '<C-P>'],
+  \   '<Down>': ['<Down>', '<C-N>'],
+  \   '<C-P>': ['<C-O>']
+  \ }
+let g:Lf_ReverseOrder=1
+let g:Lf_ShortcutB='<leader>O'
+let g:Lf_ShortcutF='<leader>o'
+
 let g:multi_cursor_start_key='g<C-p>'
 let g:multi_cursor_start_word_key='g<C-n>'
 
@@ -483,7 +486,7 @@ let g:numbers_exclude=[
 
 let g:pasta_disabled_filetypes=[
   \   'coffee',
-  \   'ctrlp',
+  \   'leaderf',
   \   'nerdtree',
   \   'python',
   \   'tagbar',
