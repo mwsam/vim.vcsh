@@ -92,7 +92,7 @@ set textwidth=79
 set title
 
 " If undo directory doesn't exist then it's like undofile is disabled.
-set undodir=~/.vim/.undo//
+set undodir=~/.vim/.undo/
 set undofile
 
 set wildignore+=*.o
@@ -108,9 +108,9 @@ set wildmenu
 set wildmode=list:longest,full
 
 
-" Move by row rather than line, can move into wrapped line naturally.
-nnoremap j gj
-nnoremap k gk
+" Move by row rather than line to move into wrapped line, unless it has count.
+nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
+nnoremap <expr> k v:count == 0 ? 'gk' : 'k'
 
 " Better documentation lookup instead of man page for keyword under cursor.
 " nnoremap K :help <C-r><C-w><CR>
