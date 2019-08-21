@@ -146,9 +146,6 @@ checkout = git clone 'https://github.com/sheerun/vim-polyglot.git' 'vim-polyglot
 checkout = git clone 'https://github.com/Shougo/vimproc.vim.git' 'vimproc.vim'
 fixups = make
 
-[bundle/vim-qargs]
-checkout = git clone 'https://github.com/henrik/vim-qargs.git' 'vim-qargs'
-
 [bundle/vim-quickhl]
 checkout = git clone 'https://github.com/t9md/vim-quickhl.git' 'vim-quickhl'
 
