@@ -167,6 +167,9 @@ checkout = git clone 'https://github.com/mhinz/vim-startify.git' 'vim-startify'
 [bundle/vim-surround]
 checkout = git clone 'https://github.com/tpope/vim-surround.git' 'vim-surround'
 
+[bundle/vim-swap]
+checkout = git clone 'https://github.com/machakann/vim-swap.git' 'vim-swap'
+
 [bundle/vim-test]
 checkout = git clone 'https://github.com/janko-m/vim-test.git' 'vim-test'
 
