@@ -22,6 +22,10 @@ set cryptmethod=blowfish
 " Cursor line makes redraw slow, and look bad with lots of split windows.
 " set cursorline
 
+" Put swap files in a single directory.
+" The ending double slash is significant, see :help directory.
+set directory^=~/.vim/.swap//
+
 set display=lastline
 set encoding=utf-8
 
@@ -68,10 +72,6 @@ set shortmess=a
 set showbreak=↪
 set showcmd
 set showmatch
-
-" This option breaks logical comparison, should only be set for HTML filetype.
-" set matchpairs+=<:>
-
 set matchtime=3
 set noshowmode
 set showtabline=2
@@ -92,7 +92,8 @@ set textwidth=79
 set title
 
 " If undo directory doesn't exist then it's like undofile is disabled.
-set undodir=~/.vim/.undo/
+" The ending double slash is significant, see :help directory.
+set undodir=~/.vim/.undo//
 set undofile
 
 set wildignore+=*.o
@@ -525,10 +526,6 @@ let g:session_autosave='no'
 let g:session_command_aliases=1
 " Use the same session directory as Startify.
 let g:session_directory=$HOME . '/.vim/session'
-
-" Signify is too slow, use Git Gutter.
-let g:signify_disable_by_default=1
-let g:signify_vcs_list=['git']
 
 let g:splitjoin_curly_brace_padding=0
 
