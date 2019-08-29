@@ -467,7 +467,9 @@ let g:neosnippet#snippets_directory=[
   \   $HOME . '/.vim/bundle/vim-snippets/snippets',
   \   $HOME . '/.vim/snippets'
   \ ]
+let g:neosnippet#data_directory=$HOME . '/.vim/.neosnippet'
 let g:neosnippet#disable_runtime_snippets={'_': 1}
+let g:neosnippet#enable_snipmate_compatibility=1
 
 let g:nerdtree_tabs_open_on_console_startup=0
 let g:nerdtree_tabs_open_on_gui_startup=0
