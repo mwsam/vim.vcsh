@@ -286,7 +286,7 @@ map <Leader>E :NERDTreeFind<CR>
 map <Leader>f :ChooseWin<CR>
 map <Leader>gb :Gblame<CR>
 map <Leader>gc :Gcommit<CR>
-map <Leader>gd :Gsdiff<CR>
+map <Leader>gd :Gdiffsplit<CR>
 map <Leader>gl :Glog<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gw :Gwrite<CR>
