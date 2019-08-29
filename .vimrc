@@ -226,7 +226,7 @@ imap <expr> <Tab> neosnippet#expandable_or_jumpable() ?
 smap <expr> <Tab> neosnippet#expandable_or_jumpable() ?
   \ '<Plug>(neosnippet_jump_or_expand)' :
   \ '<Tab>'
-inoremap <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'
+inoremap <expr> <S-Tab> pumvisible() ? '<C-p>' : '<S-Tab>'
 
 " Do not reset indent to 1st column when '#' is typed.
 inoremap # X#
