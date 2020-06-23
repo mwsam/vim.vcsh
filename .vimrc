@@ -338,7 +338,7 @@ let g:lasttab=1
 
 let g:ag_apply_qmappings=0
 let g:ag_highlight=1
-let g:ag_prg='ag --hidden --skip-vcs-ignores --smart-case --vimgrep'
+let g:ag_prg='rg --auto-hybrid-regex --hidden --ignore-file .agignore --no-ignore --smart-case --vimgrep'
 
 let g:airline_left_sep='▶'
 let g:airline_right_sep='◀'
