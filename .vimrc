@@ -523,6 +523,12 @@ let g:pymode_run_bind='<Leader>pE'
 let g:pymode_syntax_print_as_function=1
 let g:pymode_syntax_slow_sync=0
 
+" Use the same shortcuts as CtrlP for quickfix window.
+let g:qfenter_keymap={}
+let g:qfenter_keymap.vopen=['<C-v>']
+let g:qfenter_keymap.hopen=['<C-CR>', '<C-s>', '<C-x>']
+let g:qfenter_keymap.topen=['<C-t>']
+
 let g:session_autoload='no'
 let g:session_autosave='no'
 let g:session_command_aliases=1
