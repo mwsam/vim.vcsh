@@ -454,7 +454,7 @@ let g:NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
 let g:NERDTreeDirArrows=1
 let g:NERDTreeIgnore=['\~$', '\.pyc$', '^__pycache__$']
 let g:NERDTreeMinimalUI=1
-" let g:NERDTreeShowBookmarks=1
+let g:NERDTreeWinPos='right'
 
 let g:neocomplete#data_directory=$HOME . '/.vim/.neocomplete'
 let g:neocomplete#enable_at_startup=1
@@ -580,6 +580,8 @@ let g:syntastic_python_checkers=['pylint', 'py3kwarn']
 "let g:tagbar_autofocus=1
 let g:tagbar_autoshowtag=1
 let g:tagbar_compact=1
+" Put at left side to push the main edit area to center.
+let g:tagbar_left=1
 let g:tagbar_sort=0
 let g:tagbar_type_markdown = {
   \   'ctagstype': 'markdown',
