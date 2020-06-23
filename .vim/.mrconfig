@@ -26,9 +26,6 @@ post_checkout = bash install.sh
 [bundle/markdown2ctags]
 checkout = git clone 'https://github.com/jszakmeister/markdown2ctags.git' 'markdown2ctags'
 
-[bundle/matchit.zip]
-checkout = git clone 'https://github.com/vim-scripts/matchit.zip.git' 'matchit.zip'
-
 [bundle/MatchTagAlways]
 checkout = git clone 'https://github.com/Valloric/MatchTagAlways.git' 'MatchTagAlways'
 
@@ -126,6 +123,9 @@ checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-last
 
 [bundle/vim-localvimrc]
 checkout = git clone 'https://github.com/embear/vim-localvimrc.git' 'vim-localvimrc'
+
+[bundle/vim-matchup]
+checkout = git clone 'https://github.com/andymass/vim-matchup.git' 'vim-matchup'
 
 [bundle/vim-misc]
 checkout = git clone 'https://github.com/xolox/vim-misc.git' 'vim-misc'
