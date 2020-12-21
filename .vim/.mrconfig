@@ -13,6 +13,9 @@ checkout = git clone 'https://github.com/lfilho/cosco.vim.git' 'cosco.vim'
 [bundle/delimitMate]
 checkout = git clone 'https://github.com/Raimondi/delimitMate.git' 'delimitMate'
 
+[bundle/deoplete.nvim]
+checkout = git clone 'https://github.com/Shougo/deoplete.nvim.git' 'deoplete.nvim'
+
 [bundle/haproxy]
 checkout = git clone 'https://github.com/vim-scripts/haproxy.git' 'haproxy'
 
@@ -29,9 +32,6 @@ checkout = git clone 'https://github.com/jszakmeister/markdown2ctags.git' 'markd
 [bundle/MatchTagAlways]
 checkout = git clone 'https://github.com/Valloric/MatchTagAlways.git' 'MatchTagAlways'
 
-[bundle/neocomplete.vim]
-checkout = git clone 'https://github.com/Shougo/neocomplete.vim.git' 'neocomplete.vim'
-
 [bundle/neosnippet.vim]
 checkout = git clone 'https://github.com/Shougo/neosnippet.vim.git' 'neosnippet.vim'
 
@@ -40,6 +40,9 @@ checkout = git clone 'https://github.com/preservim/nerdtree.git' 'nerdtree'
 
 [bundle/numbers.vim]
 checkout = git clone 'https://github.com/myusuf3/numbers.vim.git' 'numbers.vim'
+
+[bundle/nvim-yarp]
+checkout = git clone 'https://github.com/roxma/nvim-yarp.git' 'nvim-yarp'
 
 [bundle/onedark.vim]
 checkout = git clone 'https://github.com/joshdick/onedark.vim.git' 'onedark.vim'
@@ -108,6 +111,10 @@ checkout = git clone 'https://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
 
 [bundle/vim-gitgutter]
 checkout = git clone 'https://github.com/airblade/vim-gitgutter.git' 'vim-gitgutter'
+
+[bundle/vim-hug-neovim-rpc]
+checkout = git clone 'https://github.com/roxma/vim-hug-neovim-rpc.git' 'vim-hug-neovim-rpc'
+fixups = pip3 install --user --upgrade pynvim
 
 [bundle/vim-hybrid]
 checkout = git clone 'https://github.com/w0ng/vim-hybrid.git' 'vim-hybrid'

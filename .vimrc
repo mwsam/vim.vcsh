@@ -362,6 +362,12 @@ let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
 let g:delimitMate_nesting_quotes=['"']
 
+let g:deoplete#enable_at_startup=1
+call deoplete#custom#option({
+  \   'auto_complete_delay': 200,
+  \   'max_list': 10
+  \ })
+
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=1
 " let g:indent_guides_exclude_filetypes=['help']
@@ -455,12 +461,6 @@ let g:NERDTreeDirArrows=1
 let g:NERDTreeIgnore=['\~$', '\.pyc$', '^__pycache__$']
 let g:NERDTreeMinimalUI=1
 let g:NERDTreeWinPos='right'
-
-let g:neocomplete#data_directory=$HOME . '/.vim/.neocomplete'
-let g:neocomplete#enable_at_startup=1
-let g:neocomplete#enable_smart_case=1
-let g:neocomplete#force_overwrite_completefunc=1
-let g:neocomplete#max_list=10
 
 " Snippets directory ordered in decreasing priority.
 let g:neosnippet#snippets_directory=[
@@ -718,18 +718,14 @@ function! IsBufferExist(name)
   endfor
 endfunction
 
-" Disable NeoComplete before starting multiple selection due to conflict.
+" Disable Deoplete before starting multiple selection due to conflict.
 function! Multiple_cursors_before()
-  if exists(':NeoCompleteLock') == 2
-    execute 'NeoCompleteLock'
-  endif
+  call deoplete#custom#buffer_option('auto_complete', v:false)
 endfunction
 
-" Re-enable NeoComplete after multiple selection is cancelled.
+" Re-enable Deoplete after multiple selection is cancelled.
 function! Multiple_cursors_after()
-  if exists(':NeoCompleteUnlock') == 2
-    execute 'NeoCompleteUnlock'
-  endif
+  call deoplete#custom#buffer_option('auto_complete', v:true)
 endfunction
 
 " Needed by YankRing if Y is remapped, i.e. to y$.
